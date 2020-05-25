@@ -93,6 +93,7 @@ extension CollectionViewController: UICollectionViewDelegate  {
             self.navigationController?.pushViewController(dummyController, animated: true)
         }
     }
+    //long press to delete remember
     func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
         guard let item = dataSource.itemIdentifier(for: indexPath) else {
             return nil
