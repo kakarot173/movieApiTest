@@ -69,7 +69,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = tabController
         window?.makeKeyAndVisible()
 
-        //tab bar comes with a nav bar. here is how to customize i
+     
 
        
 

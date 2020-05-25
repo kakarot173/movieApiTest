@@ -35,7 +35,7 @@ class CollectionViewController: UIViewController {
     
     // https://jsonplaceholder.typicode.com/
     static var apiUrl = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
-    
+    fileprivate let imageApiBaseUrl = "https://image.tmdb.org/t/p/w342"
     // MARK: DataSource & DataSourceSnapshot typealias
     typealias DataSource = UICollectionViewDiffableDataSource<Section,detail>
     typealias DataSourceSnapshot = NSDiffableDataSourceSnapshot<Section,detail>
@@ -48,7 +48,7 @@ class CollectionViewController: UIViewController {
     private var dataSource :DataSource!
     private var snapshot = DataSourceSnapshot()
     private var dataArray: [detail]?
-    fileprivate let imageApiBaseUrl = "https://image.tmdb.org/t/p/w342"
+    
     var dummyController = UIViewController()
     
     
